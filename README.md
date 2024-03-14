@@ -67,4 +67,12 @@ Las listas anidadas son listas dentro de listas.
 
 Para meter una lista dentro de otra, utilizamos la tabulacion
 
+### Imagenes 
+
+Para añadir una imagen, hemos de dar una descripcion y el nombre de la imagen
+
+![Meme de Chems 2023 vs 2024](pub106_cloud_zack_sephiroth-3-1--ga4rX0dsG.jpg?quality=85)
+
+La sintaxis es: exclamacion seguido de una descripcion dentro de llaves anguladas, seguido del nombre de la imagen entre parentesis
+
 
