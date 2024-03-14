@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Login web</title>
+	
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@800&family=Protest+Riot&display=swap" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="estilo.css" />
+	<link rel ="stylesheet" href="newfd.js" />
+
+<script>
+/* apuntes javascript funciones y variables
+
+
+function saludo() {
+console.log("ola olita");
+}
+
+let nombre = "Jacinto";
+
+console.log("ola k ase " +nombre);
+
+for(let i = 0; i < 10; i++){
+console.log(i);
+}
+
+let pelis = ["Santiego Abescal", "Titanic", "Cars"];
+pelis.push("Frozen");
+
+for (let i = 0; i < pelis.length; i++){
+console.log(pelis[i]);
+}
+
+saludo();
+saludo();
+saludo();
+*/
+
+
+
+</script>
+
+
+
+
+</head>
+
+<body>
+	<header>
+		<h1>Web Victor</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Portada</a></li>
+				<li><a href="cv.html">CV</a></li>	
+				<li><a href="about.html">Sobre mi</a></li>
+				<li><a href="contact.html">Contacto</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	<main>
+	
+
+	<h1>Login</h1>
+	
+<form name="datosRegistro" id="datosRegistro" method="post" action=" ">
+<label for="nombre">NOMBRE: </label>
+<input type="text" id="nombre" name="nombre" value=" "><br>
+<p><label for="apellidos">APELLIDOS: </label></p>
+<p><input type="text" id="apellidos" name="apellidos" value=" "><br></p>
+<label for="sexo">SEXO: </label>
+<select id="sexo" name="sexo">
+<option value="0" selected="selected">...</option>
+<option value="1">Masculino</option>
+<option value="2">Femenino</option>
+</select>
+<br>
+<label for="estadoCivil">ESTADO CIVIL:</label>
+<select id="estadoCivil" name="estadoCivil">
+<option value="0" selected="selected">...</option>
+<option value="1">Soltero</option>
+<option value="2">Casado</option>
+<option value="3">Divorciado</option>
+<option value="4">Viudo</option>
+</select>
+</br>
+<label>IDIOMAS:</label><br>
+<input type="checkbox" name="idioma1" id="idioma1" value="Catellano">
+Catellano<br>
+<input type="checkbox" name="idioma2" id="idioma2" value="Catalan">
+Catalan<br>
+<input type="checkbox" name="idioma3" id="idioma3" value="Ingles">
+Ingles<br>
+<input type="checkbox" name="idioma4" id="idioma4" value="Frances">
+Frances<br>
+<label>PROFESION:</label>
+<br>
+<input type="radio" name="profesion" id="profesion1" value="autonomo">Autonomo<br>
+<input type="radio" name="profesion" id="profesion2" value="ajena">Trabajador cuenta ajena<br>
+<input type="radio" name="profesion" id="profesion3" value="paro">Desempleado<br>
+<input type="radio" name="profesion" id="profesion4" value="jubilado">Jubilado<br>
+
+
+
+
+
+
+
+  	<p><label for="login_form">Login:</label> <input type="text" name="login" id="login_form" placeholder="Tu nombre de usuario" /><em id="error_login">Error</em></p></p>
+	<p><label for="pass_form">Password:</label> <input type="password" name="pass" id="pass_form" placeholder="Tu contraseña"/></p>
+	<p><label for="pass_form">Repite Password:</label> <input type="password" name="pass" id="pass_form" placeholder="Tu contraseña"/></p>
+	<p><input type="checkbox" name="robot" id="robot_form" /><label for="robot_form">¿Eres un robot?</label></p>
+	
+
+	
+ 	<p><input type="button" value="Login" id="button_login" /></p>
+  
+</form>
+	
+	<script>
+	function haz_click(){
+	let usuario = document.getElementById("login_form");
+	console.log("click");
+	console.log(usuario.value.length);
+	let expresion = /"/;
+	let error = document.getElementById("error_login");
+	let error_login	= expresion.test(login_form.value);
+	
+	console.log(error_login);
+	if(error_login){
+	error.innerHTML = "ERROR"
+	error.style.color = "red";
+	}
+	else {
+	error.innerHTML = "OKAY";
+	error.style.color = "green";
+	}
+	
+	}
+	let boton = document.getElementById("button_login");
+	boton.addEventListener("click", haz_click)
+	
+	/*
+	
+	
+	let boton = document.getElementById("button_login");
+	
+	boton.addEventListener("click", function(event){})
+	
+	let usuario = document.getElementById("mail_login");
+	
+	console.log(usuario.value.length);
+	
+	*/
+	
+	
+	</script>
+	
+	</form>
+	<main/>
+	
+
+
+</body>
+</html>
