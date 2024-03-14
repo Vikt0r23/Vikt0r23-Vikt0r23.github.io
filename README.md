@@ -76,3 +76,7 @@ Para añadir una imagen, hemos de dar una descripcion y el nombre de la imagen
 La sintaxis es: exclamacion seguido de una descripcion dentro de llaves anguladas, seguido del nombre de la imagen entre parentesis
 
 
+### Enlaces
+
+Los enlaces son parecidos a las imagenes, la diferencia es que no llevan exclamacion delante y se pueden introducir dentro de frases [como esta](https://enti.cat).
+
