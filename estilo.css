@@ -1,0 +1,53 @@
+header{
+	background-color:#dddddd;
+	border-bottom:4px solid #000000;
+}
+header nav a {
+	display:block;
+	color:#ffffff;
+	background-color:#666666;
+	text-decoration:none;
+	padding:8px;
+}
+header nav a:hover{
+	background-color:#000000;
+}
+
+footer{
+	color: #ffffff;
+	background-color:#666666;
+	border-top:4px solid #000000;
+	text-align:center;
+}
+a{
+	color:pink;
+}
+
+a:hover{
+	background-color:#000000;
+	text-decoration:underline;
+}
+
+header nav ul{
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+header nav li{
+flex-grow:1;
+text-align:center;
+}
+
+main{
+border:5px groove #000000;
+}
+
+h1{
+margin:0;
+font-family:'Protest Riot', sans-serif;
+}
+body{
+margin:0;
+}
